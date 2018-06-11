@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#880E4F"
+    tools:context="com.eklavya.ali.moviedirectory.HomeActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Directry"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+       android:id="@+id/logo"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logo"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/list"
+            android:text="LIst All"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="20dp"/>
+        <Button
+            android:id="@+id/addnew"
+            android:text="Add New"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

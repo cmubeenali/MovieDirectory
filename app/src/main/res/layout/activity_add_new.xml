@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eklavya.ali.moviedirectory.AddNew"
+    android:background="#009688"
+    >
+
+    <EditText
+        android:id="@+id/movieName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Movie Name"
+        android:textColorHint="#fff"
+        android:layout_margin="10dp"        />
+    <EditText
+        android:layout_below="@+id/movieName"
+        android:id="@+id/director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Director"
+        android:textColorHint="#fff"
+        android:layout_margin="10dp"        />
+    <EditText
+        android:layout_below="@+id/director"
+        android:id="@+id/hero"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hero"
+        android:textColorHint="#fff"
+        />
+    <EditText
+        android:layout_below="@+id/hero"
+        android:id="@+id/date"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Release Date"
+        android:textColorHint="#fff"
+        />
+
+<LinearLayout
+    android:layout_below="@+id/date"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/Addbtn"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#EEFF41"
+        android:text="Add"/>
+    <Button
+        android:id="@+id/Clearbtn"
+        android:layout_margin="10dp"
+        android:background="#BDBDBD"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Clear"/>
+</LinearLayout>
+
+
+
+</RelativeLayout>
