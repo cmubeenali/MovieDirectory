@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/movienamelist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:layout_gravity="center_horizontal"
-        />
-    <TextView
-        android:id="@+id/directorlsit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:id="@+id/lblName"
+        android:textColor="#444"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/lblDirector"
+        android:layout_below="@id/lblName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333"/>
+    <TextView
+        android:id="@+id/lblActor"
+        android:layout_below="@id/lblDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imgDelete"
+        android:background="@drawable/delete_button"
         />
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/lblDate"
+        android:textColor="#333"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgDelete"
+        />
+
+</RelativeLayout>

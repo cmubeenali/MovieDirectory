@@ -13,6 +13,6 @@ public class DbHandler {
     public DbHandler(SQLiteDatabase DbMovie){
         this.DbMovie=DbMovie;
 
-        DbMovie.execSQL("CREATE TABLE if not exists tbl_Movie(id integer primary key autoincrement,name varchar(200),director varchar(100),hero varchar(100),release_date datetime)");
+        DbMovie.execSQL("CREATE TABLE if not exists tbl_Movie(id integer primary key autoincrement,name varchar(200),director varchar(100),hero varchar(100),release_date varchar(50))");
     }
 }

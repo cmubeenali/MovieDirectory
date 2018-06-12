@@ -11,6 +11,6 @@ public class model {
     public String MovieName ="";
     public String director="";
     public String hero="";
-    public Date date;
+    public String date;
 
 }

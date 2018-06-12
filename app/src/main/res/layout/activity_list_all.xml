@@ -6,11 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.eklavya.ali.moviedirectory.ListAll"
     android:background="#FFEB3B" >
-    
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/filterTextBox"
+        android:background="#efefef">
+
+    </android.support.v7.widget.SearchView>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerListAll"
+        android:layout_below="@+id/filterTextBox">
         
     </android.support.v7.widget.RecyclerView>
 

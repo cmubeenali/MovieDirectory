@@ -52,9 +52,10 @@ public class AddNew extends AppCompatActivity {
                         //db Functions
                         dbCon();
                         SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yyyy");
-                        Date Rdate=sdf.parse(date.getText().toString().trim());
-                        DbMovie.execSQL("INSERT INTO tbl_Movie(name,director,hero,release_date )Values('"+moviewName.getText().toString().trim()+"','"+director.getText().toString().trim()+"','"+hero.getText().toString().trim()+"','"+Rdate+"')");
+                        DbMovie.execSQL("INSERT INTO tbl_Movie(name,director,hero,release_date )Values('"+moviewName.getText().toString().trim()+"','"+director.getText().toString().trim()+"','"+hero.getText().toString().trim()+"','"+date.getText().toString().trim()+"')");
                         Toast.makeText(AddNew.this, "Successfully Inserted", Toast.LENGTH_SHORT).show();
+
+                        Clear();
 
                     }
                     catch (Exception ex){
@@ -65,8 +66,22 @@ public class AddNew extends AppCompatActivity {
             }
         });
 
+        Clearbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Clear();
+            }
+        });
 
 
+
+    }
+
+    public void Clear(){
+        moviewName.setText("");
+        director.setText("");
+        hero.setText("");
+        date.setText("");
     }
 
     public void  dbCon(){
